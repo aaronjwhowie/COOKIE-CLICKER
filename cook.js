@@ -9,9 +9,9 @@ let cookiePump = 1;
 // })();
 
 document.querySelector(".count").addEventListener("click", function () {
-  cookiePump += counter;
+  counter += cookiePump;
   console.log(counter);
-  document.querySelector(".counter").innerHTML = "$(counter) COOKIE";
+  document.querySelector(".counter").innerHTML = `${counter} cookies`;
 });
 
 // if (counter > 10) {
